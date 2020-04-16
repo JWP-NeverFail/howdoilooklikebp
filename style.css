@@ -1,0 +1,291 @@
+.body { 
+    font-family: sans-serif, Helvetica Neue; 
+    background-color: #ffffff;
+    font-weight: 600;
+} 
+
+.bg-light { 
+    background-color: #ffffff !important; 
+} 
+.rerty-btn{
+    color : #000000
+}
+
+.navbar-light .navbar-toggler { 
+    color: rgba(0, 0, 0, 0.5); 
+    border-color: transparent; 
+} 
+
+.JISOO-bar { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 1.5rem; 
+    border-radius: 10px; 
+    background-color: rgba(235,166, 190, 1); 
+} 
+
+.JISOO-box { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 1.5rem; 
+    border-radius: 10px; 
+    width: 100%; 
+    background-color: rgba(49, 132, 155, 0.2); }
+
+.ROSE-bar { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 1.5rem; 
+    border-radius: 10px; 
+    background-color: rgba(235,166, 190, 1); 
+} 
+
+.ROSE-box { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 1.5rem; 
+    border-radius: 10px; 
+    width: 100%; 
+    background-color: rgba(49, 132, 155, 0.2); }
+
+
+.LISA-bar { position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 1.5rem; 
+    border-radius: 10px; 
+    background-color: rgba(235,166, 190, 1); 
+} 
+
+.LISA-box { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 1.5rem; 
+    border-radius: 10px; 
+    width: 100%; 
+    background-color: rgba(49, 132, 155, 0.2); }
+.JENNIE-bar { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 1.5rem; 
+    border-radius: 10px; 
+    background-color: rgba(235,166, 190, 1); 
+} 
+
+.JENNIE-box { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 1.5rem; 
+    border-radius: 10px; 
+    width: 100%; 
+    background-color: rgba(49, 132, 155, 0.2); }
+
+.file-upload { 
+    width: 100vw; 
+    height:100vw; 
+    border-radius: 10px; 
+    border: solid 1.5px #f6f7fa; 
+    background-color: #f6f7fa; 
+} 
+.file-upload-btn { 
+    width: 100%; 
+    margin: 0; 
+    color: #fff; 
+    background: #1fb264; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 4px; 
+    border-bottom: 4px solid #15824b; 
+    transition:
+all 0.2s ease; 
+    outline: none; 
+    text-transform: uppercase; 
+    font-weight: 700; 
+} 
+.file-upload-btn:hover { 
+    background: #1aa059; 
+    color: #ffffff; 
+    transition: all 0.2s ease; 
+    cursor: pointer; } 
+.file-upload-btn:active { 
+    border: 0; 
+    transition: all 0.2s ease; 
+}
+.file-upload-content { 
+    height:auto; 
+    display: none; 
+    text-align: center; 
+} 
+.file-upload-input { 
+    position: absolute; 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
+    outline: none; 
+    opacity: 0; 
+    cursor: pointer; } 
+.image-upload-wrap { 
+    width : 70%; 
+    height: 65%;
+     margin : 0 auto; 
+    margin-top: 40px; 
+    border: 4px dashed #1fb264; 
+    position: relative; 
+    object-fit: contain;
+    border-radius: 10px; 
+    border: dashed 3px #ffb8c6; 
+    background-color: #ffffff; } 
+.image-dropping, .image-upload-wrap:hover { 
+    background-color:#ff6781; 
+    border: 3px dashed #000000; } 
+.image-title-wrap { 
+    padding: 0 15px 15px 15px; 
+    color: #222; } 
+.drag-text { 
+    text-align: center; 
+} 
+.share-message{
+    font-weight : bold;
+    font-size : 0.8rem;
+    
+}
+/* #loading {
+  display: none;
+} */
+.drag-text h3 { 
+    width : 70%; 
+    font-weight: 100; 
+    text-transform: uppercase; 
+    padding: 0px 0; 
+    text-align :center; 
+    margin-top : 4rem ;
+    line-height : 160%;
+} 
+.file-upload-image{ 
+    max-height: 200px; 
+    max-width: 200px; 
+    margin: auto; 
+    padding: 20px; } 
+.remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #575b5fd6;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    border-bottom: 5px solid #ed5b8d;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+} 
+.remove-image:hover { 
+    background: #c13b2a; 
+    color: #ffffff; 
+    transition: all 0.2s ease; 
+    cursor: pointer; 
+} 
+.remove-image:active { 
+    border: 0; 
+    transition: all 0.2s ease; 
+} 
+.nav-distance { 
+    padding:2.1% 7.7%; 
+} 
+.navbar-light .navbar-brand { 
+    font-family: Helvetica neum; 
+    font-size : 2rem; 
+    line-height: 1.68; 
+    text-align: left; 
+    color: #35465d; } 
+.section { 
+    margin-top: 100px; } 
+.title { 
+    font-family: Helvetica neum; 
+    line-height: 1.67; 
+    text-align: center;
+    color: #35465d; } 
+.subtitle { 
+    font-family: Helvetica neum; 
+    line-height: 1.53; 
+    text-align: center; 
+    color: #35465d; } 
+.homepage-link { 
+    font-family: Helvetica neum; 
+    line-height: 1.71; 
+    font-size : 1.5rem; 
+    text-align: center; 
+    color: #f73737; 
+    text-decoration:underline; 
+} 
+.memberName-label{
+    text-align: left;
+    width: 30%;
+    font-weight: bold;
+}
+.d-block{
+    color : white;
+    font-weight : bold;
+}
+.result-message{
+    font-weight: bold;
+}
+.upload{ 
+    width : 30%;
+    margin-top: 4rem;
+} 
+.put-image{ 
+    font-family: Helvetica neum; 
+    color: #35465d; 
+    font-size : 1.6rem; 
+    text-align : center; 
+    margin: 0 auto;
+    margin-top : 10rem;
+} 
+
+/* On screens that are 600px or less, set the background color to olive */ 
+@media screen and (max-width:600px) 
+{ html { 
+    font-size: 10px; text-rendering: auto; } 
+    
+    /* On screens that are 600px or less, set the background color to olive */ 
+@media screen and (max-width: 350px) 
+    { html { 
+        font-size: 8px; text-rendering: auto; } 
+    
+    .navbar-brand { 
+        font-size : 2rem;
+} 
+    .live-poll-area { 
+        overflow: auto; 
+        } 
+    .graph-container { 
+        display: none; 
+        } 
+    .canvas .graph-container { display: block; } 
+    .graph-container .graph { width: 110px; margin: 0 auto 25px auto; } 
+    .graph-container .graph canvas { max-width: 110px; height: auto;
+} 
+    .bar-chart { list-style-type: none; margin: 0 auto; padding: 0; max-width: 244px; } 
+    .bar-chart li { margin: 0; padding: 0; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.45; overflow: auto; } 
+    .bar-chart
+span { display: block; } .bar-chart .label { font-weight: 700; width: 70%; float: left; } 
+    .bar-chart .percentage { width: 30%; float: right; font-size: 12px; text-align: right; } 
+    .bar-chart .bar-track { clear: both; display: block; background: #e6f0f2;
+box-shadow: 0 2px 0 #cccccc; height: 5px; overflow: visible; margin-bottom: 20px; } 
+    .bar-chart .bar { display: block; height: 5px; } 
+    .bar-chart .answer-0 .bar { background-color: #ce0f42; box-shadow: 0 2px 0 #99102e; } .bar-chart .answer-1 .bar { background-color:
+#72be44; box-shadow: 0 2px 0 #538e32; } 
+    .bar-chart .answer-2 .bar { background-color: #f15637; box-shadow: 0 2px 0 #bd4429; }     .bar-chart .answer-3 .bar { background-color: #8b1851; box-shadow: 0 2px 0 #53002c; } 
+    
+
+    /* .percent-text { font-size: 1rem; color: #ffffff; } } } */
