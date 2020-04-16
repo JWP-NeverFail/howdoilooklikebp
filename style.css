@@ -8,7 +8,10 @@
     background-color: #ffffff !important; 
 } 
 .rerty-btn{
-    color : #000000
+    color : #000000;
+}
+.kakao_ad_area{
+    margin : 0 auto;
 }
 
 .navbar-light .navbar-toggler { 
