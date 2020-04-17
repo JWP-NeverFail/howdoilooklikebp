@@ -112,10 +112,17 @@
                 <p class="text-center">Teachable machine is analyzing...</p>
             </div>
             <p class="result-message"></p>
-            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            <div id="label-container" class="d-flex flex-column justify-content-center label"></div>
             <div class="image-title-wrap">
-                <button type="button" onclick="removeUpload()" class="mt-4 remove-image">Play again!
+                
+                <!-- <button type="button" onclick="removeUpload()" class="mt-4 remove-image">Play again!
                     <!-- <span class="image-title">Uploaded Image</span> -->
+                <!-- </button> -->
+                
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="mt-5 btn btn-primary-main btn-lg" data-toggle="modal" data-target="#myModal">
+                  Play again!
                 </button>
             </div>
             <!-- <div class="retry-btn-wrap">
@@ -130,10 +137,44 @@
     </div>
 
     <!-- 업로드 컨테이너 끝 -->
+    
+    
+
+<!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">(AD)_Thank you for using!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+              <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-ubrx6zwxlp2o" 
+ data-ad-width   = "300" 
+ data-ad-height  = "250">
+                  </ins>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="refresh()" data-dismiss="modal">Play again!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>  
+    
+    
     <!-- 광고 -->
     <div class="mt-3 bt-2 container d-flex justify-content-center ad-banner">
             <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-vb6cc1oe2r06" data-ad-width="320" data-ad-height="100"></ins>
     </div>
+    <!-- modal -->
+            <script>
+            $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').focus()
+        })          
+            </script>
             <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <!-- 댓글 disqus 시작-->
     <div id="disqus_thread"></div>
@@ -173,10 +214,12 @@
                 reader.onload = function(e) {
                     $('.image-upload-wrap').hide();
                     $('.image-title-wrap').hide();
+                    $('#label-container').hide();
                     $('#loading').show();
                     $('.file-upload-image').attr('src', e.target.result);
                     $('.file-upload-content').show();
                     $('.image-title').html(input.files[0].name);
+                    
                 };
                 reader.readAsDataURL(input.files[0]);
                 init().then(() => {
@@ -185,18 +228,23 @@
                     $('#loading').hide();
                     $('.image-title-wrap').show();
                     $('.result-message').show();
+                    $('#label-container').show();
                 })
                 //                 1번
             } else {
                 removeUpload();
             }
         }
-
+        function refresh(){
+            window.location.reload();
+        }
         function removeUpload() {
             $('.result-message').hide();
+            $('#label-container').hide();
             $('.file-upload-input').replaceWith($('.file-upload-input').clone());
             $('.file-upload-content').hide();
             $('.image-upload-wrap').show();
+            
         }
         $('.image-upload-wrap').bind('dragover', function() {
             $('.image-upload-wrap').addClass('image-dropping');
