@@ -236,6 +236,9 @@
             }
         }
         function refresh(){
+            gtag('event', '2차버튼', {
+                'event_category': 'Play again!'
+            });
             window.location.reload();
         }
         function removeUpload() {
