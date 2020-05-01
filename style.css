@@ -101,13 +101,13 @@
     background-color: rgba(49, 132, 155, 0.2);
 }
 
-.file-upload {
+/* .file-upload {
     width: 100vw;
     height: 130vw;
     border-radius: 10px;
     border: solid 1.5px #f6f7fa;
     background-color: #f6f7fa;
-}
+} */
 .file-upload-btn {
     width: 100%;
     margin: 0;
@@ -285,11 +285,12 @@
 
 .btn-primary-main{
     width: 200px;
+    height: 50px;
     margin: 0 auto;
     color: #fff;
     background: #575b5fd6;
     border: none;
-    padding: 15px;
+    padding: 5px;
     border-radius: 20px;
     border-bottom: 5px solid #ed5b8d;
     transition: all 0.2s ease;
@@ -387,24 +388,139 @@
     @media screen and (max-width:530px)
         { html { 
         font-size: 14px; text-rendering: auto;
-            } 
+            }
+            .file-upload {
+                    width: 100vw;
+                    height: 105vw;
+                    border-radius: 10px;
+                    border: solid 1.5px #f6f7fa;
+                    background-color: #f6f7fa;
+                }
+}
+
+    @media screen and (max-width:510px)
+        { html { 
+        font-size: 14px; text-rendering: auto;
+            }
+            .file-upload {
+                    width: 100vw;
+                    height: 108vw;
+                    border-radius: 10px;
+                    border: solid 1.5px #f6f7fa;
+                    background-color: #f6f7fa;
+                }
+}
             
             @media screen and (max-width:480px)
         { html { 
         font-size: 13px; text-rendering: auto;
             } 
+}
+
+    @media screen and (max-width:465px)
+        { html { 
+        font-size: 13px; text-rendering: auto;
+            }
+            .file-upload {
+                    width: 100vw;
+                    height: 113vw;
+                    border-radius: 10px;
+                    border: solid 1.5px #f6f7fa;
+                    background-color: #f6f7fa;
+                }
+            .btn-primary-main {
+                    width: 160px;
+                    height: 45px;
+                    margin: 0 auto;
+                    color: #fff;
+                    background: #575b5fd6;
+                    border: none;
+                    padding: 0px;
+                    border-radius: 14px;
+                    border-bottom: 5px solid #ed5b8d;
+                    transition: all 0.2s ease;
+                    outline: none;
+                    text-transform: uppercase;
+                    font-weight: 550;
+                    }
+}
+
+    @media screen and (max-width:440px)
+        { html { 
+        font-size: 13px; text-rendering: auto;
+            }
+            .file-upload {
+                    width: 100vw;
+                    height: 115vw;
+                    border-radius: 10px;
+                    border: solid 1.5px #f6f7fa;
+                    background-color: #f6f7fa;
+                }
+}
+
+    @media screen and (max-width:420px)
+        { html { 
+        font-size: 13px; text-rendering: auto;
+            }
+            .file-upload {
+                    width: 100vw;
+                    height: 128vw;
+                    border-radius: 10px;
+                    border: solid 1.5px #f6f7fa;
+                    background-color: #f6f7fa;
+                }
+}
             @media screen and (max-width:380px)
         { html { 
         font-size: 11px; text-rendering: auto;
-            } 
+            }
+            .file-upload {
+                    width: 320px;
+                    height: 420px;
+                    border-radius: 10px;
+                    border: solid 1.5px #f6f7fa;
+                    background-color: #f6f7fa;
+                        }
+            .file-upload-image {
+                    max-height: 150px;
+                    max-width: 150px;
+                    margin: auto;
+                    padding: 10px;
+                                }
+            .btn-primary-main {
+                    width: 150px;
+                    height: 40px;
+                    margin: 0 auto;
+                    color: #fff;
+                    background: #575b5fd6;
+                    border: none;
+                    padding: 0px;
+                    border-radius: 14px;
+                    border-bottom: 5px solid #ed5b8d;
+                    transition: all 0.2s ease;
+                    outline: none;
+                    text-transform: uppercase;
+                    font-weight: 450;
+}
+                    
+}
             
             @media screen and (max-width:340px)
         { html { 
          font-size: 11px; text-rendering: auto;
             } 
-@media screen and (max-width:360px)
-{.addthis_inline_share_toolbox_k8yd {
-    
-}}
+}
+            
+            @media screen and (min-width:531px){
+                .file-upload {
+                    width: 500px;
+                    height: 580px;
+                    border-radius: 10px;
+                    border: solid 1.5px #f6f7fa;
+                    background-color: #f6f7fa;
+                    
+                    }
+            }
+
     
     
